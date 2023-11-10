@@ -59,7 +59,7 @@ class Generator(nn.Module):
 
     def plot_progress(self):
         df = pandas.DataFrame(self.progress, columns=['loss'])
-        df.plot(title ='Loss: generator', ylim=(0, 1.0), figsize=(16,8), alpha=0.1, marker='.', grid=True, yticks=(0, 0.25, 0.5))
+        df.plot(title ='Loss: generator', ylim=(0, 10.0), figsize=(16,8), alpha=0.1, marker='.', grid=True, yticks=(0, 0.25, 10.0))
         pass
 
     def save_model(self):
