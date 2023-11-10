@@ -1,8 +1,10 @@
+SRC='src'
+
 view:
-	python3 gan_mnist_cnn_view_data.py $(record)
+	python3 ${SRC}/gan_mnist_cnn_view_data.py $(record)
 
 train:
-	python3 gan_mnist_cnn_train.py
+	python3 ${SRC}/gan_mnist_cnn_train.py
 
 test:
-	python3 gan_mnist_cnn_test.py
+	python3 ${SRC}/gan_mnist_cnn_test.py

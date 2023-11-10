@@ -1,10 +1,11 @@
+import os
 import torch
 import matplotlib.pyplot as plt
 
 from mnist_dataset import MnistDataset
 
-mnist_dataset_train = MnistDataset('mnist_data/mnist_train.csv')
-
+path_to_data = os.environ["DATA_CSV_MNIST"]
+mnist_dataset_train = MnistDataset(path_to_data + '/mnist_train.csv')
 
 from gan_mnist_cnn_generator import Generator
 from gan_mnist_cnn_discriminator import Discriminator
